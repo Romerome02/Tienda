@@ -1,0 +1,12 @@
+# Habilitar el motor de reescritura
+RewriteEngine On
+
+# Establecer la URL base para todas las reglas de reescritura posteriores
+RewriteBase /Tienda/
+
+# Redirigir todas las solicitudes a index.php si el archivo o directorio solicitado no existe
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Reescribir la URL a index.php con la solicitud original como un parámetro de consulta
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]

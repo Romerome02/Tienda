@@ -1,0 +1,121 @@
+/* Importar una fuente más moderna */
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+/* Estilos generales */
+body {
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    width: 380px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo del logo */
+.logo {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* Estilo del título */
+h3 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+/* Campos de entrada */
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #8E2DE2;
+    box-shadow: 0 0 8px rgba(142, 45, 226, 0.5);
+}
+
+/* Botón de login */
+.btn-primary {
+    width: 100%;
+    border-radius: 8px;
+    background: #8E2DE2;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #4A00E0;
+}
+
+/* Mensaje de error */
+.alert-danger {
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Enlace de recuperación de contraseña */
+.forgot-password {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.forgot-password:hover {
+    color: #4A00E0;
+}
+
+.card-img-top {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen si es necesario sin deformarla */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+.card {
+    height: 100%; /* Hace que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /* Permite que el contenido de la tarjeta crezca y se distribuya de manera uniforme */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
